@@ -3,8 +3,8 @@
 #include "DHT.h"
 
 //defines
-#define SSID_REDE "Garibaldi"            //coloque aqui o nome da rede que se deseja conectar
-#define SENHA_REDE "170595je"              //coloque aqui a senha da rede que se deseja conectar
+#define SSID_REDE "SSID"            //coloque aqui o nome da rede que se deseja conectar
+#define SENHA_REDE "SENHA_WLAN"              //coloque aqui a senha da rede que se deseja conectar
 #define INTERVALO_ENVIO_THINGSPEAK  3000  //intervalo entre envios de dados ao ThingSpeak (em ms)
 #define DHTPIN D2                           // what digital pin we're connected to
 #define DHTTYPE DHT22                       // DHT 22  (AM2302), AM2321
@@ -16,7 +16,7 @@ String UV_index = "0";
 
 const char EnderecoAPIThingSpeak[] = "api.thingspeak.com";
 const char* server = "api.thingspeak.com";
-String ChaveEscritaThingSpeak = "26TO989HAZBG1DR4";
+String ChaveEscritaThingSpeak = "KeyAPI";
 long lastConnectionTime; 
 WiFiClient client;
  
